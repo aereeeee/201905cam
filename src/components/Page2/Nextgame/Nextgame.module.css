@@ -1,0 +1,17 @@
+.wrapper{
+    margin:30px 0;
+}
+.button{
+    margin:30px 0;
+    padding:20px 30px;
+    border:1px solid #0099a8;
+    font-weight: 800;
+    border-radius: 50px;
+    color:#0099a8;
+    font-size: 21px;
+    cursor: pointer;
+    transition: all .2s;
+}
+.button:hover{
+    box-shadow: 0 0 4px #0099a8, 0 0 12px #0099a8, 0 0 16px #fff, 0 0 20px #fff;
+}

@@ -1,0 +1,68 @@
+.wrapper{
+    font-size:18px;
+    text-align: center;
+    line-height:170%;
+    margin:0;
+    margin-bottom:50px;
+}
+.selectsex, .selectage{
+    margin:10px 0;
+    display:flex;
+    justify-content: center;
+}
+.btncontainer{
+    margin:15px 0;
+}
+.button{
+    cursor:pointer;
+    padding:2px 10px;
+    margin:0 5px;
+    color:#999;
+    border:1px solid #999;
+    border-radius: 50px;
+}
+.button:hover{
+    color:#a5e5d9;
+    border:1px solid #a5e5d9;
+}
+.button.selected{
+    /* border:1px solid cyan;
+    color:cyan; */
+     font-weight: 800;
+    color:#a5e5d9;
+    border:1px solid #a5e5d9;
+    box-shadow: 0 0 2px #fff, 0 0 8px #a5e5d9, 0 0 12px #a5e5d9;
+}
+.impact{
+color:#1dcad3;
+
+}
+.selectage li{
+    width:auto;
+    margin-bottom:0;
+}
+@media screen and (max-width: 700px) {
+    .wrapper{
+        margin:80px 10px 60px 10px;
+    }
+    .selectsex, .selectage{
+        margin:0;
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .button{
+        width:90%;
+        /* padding:5px 15px; */
+        margin:0 10px;
+        white-space: nowrap;
+    }
+    .selectage li{
+        width:33%;
+        margin-bottom:15px;
+    }
+    .selectsex li{
+        width:33%;
+        /* margin-bottom:15px; */
+    }
+  }

@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Nanum+Gothic&display=swap');
 *, *::before, *::after {
   box-sizing: border-box;
 }
@@ -47,12 +48,14 @@ table {
 }
 
 body {
+  overflow-x:hidden;
   margin: 0;
   padding: 0;
   font-family: Montserrat, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color:#fff;
+  background:#161616;
 }
 
 a {
@@ -68,4 +71,69 @@ button {
   font: inherit;
   vertical-align: baseline;
   background-color: transparent;
+}
+body::-webkit-scrollbar { width: 0 !important }
+body { 
+  font-family:'Nanum Gothic', sans-serif;
+  overflow: -moz-scrollbars-none;
+  -ms-overflow-style: none;
+  -webkit-user-select: none; /* Safari 3.1+ */
+  -moz-user-select: none; /* Firefox 2+ */
+  -ms-user-select: none; /* IE 10+ */
+  user-select: none; /* Standard syntax */ 
+}
+.slider{
+  width:100%;
+}
+*,button:focus {outline:0;}
+.bartooltip{
+  padding:10px;
+  background: #fff;
+}
+.bartooltip div{
+margin-bottom:10px;
+font-size: 16px;
+}
+.bartooltip div:last-child{
+  margin-bottom:0;
+  }
+.bartooltip .tooltiptitle{
+  font-weight: 800;
+}
+.apexcharts-canvas{
+  margin-top:-10px;
+  margin-left:-8px;
+}
+.apexcharts-legend-marker{
+  cursor:default !important;
+}
+.mytooltip{
+  font-size:14px;
+  padding:10px;
+}
+#mygraph{
+    margin-top:30px;
+    border-bottom: 1px solid #ddd;
+}
+#mygraph .apexcharts-canvas{
+  margin-top:0;
+  margin-left:0;
+}
+button{
+  background:transparent;
+}
+/* .apexcharts-xaxistooltip-bottom:before{
+  display:none !important
+}
+.apexcharts-xaxistooltip-bottom:after{
+  display:none !important;
+}
+#mygraph .apexcharts-tooltip{
+  display:none;
+} */
+@media screen and (max-width: 700px) {
+  html,body{
+    width:100%;
+    overflow-x: hidden;
+  }
 }

@@ -1,0 +1,126 @@
+.wrapper{
+    margin:50px 0;
+    width:100%;
+    transition:opacity 0.5s;
+    opacity: 1;
+}
+.wrapper.disablewrap{
+    transition: opacity 0.5s;
+    opacity:0.3;
+}
+
+.title{
+    border-top:1px solid #888;
+    border-style: dotted;
+    padding-top:50px;
+    font-weight: 800;
+  }
+.subtitle{
+    word-break: keep-all;
+    line-height: 150%;
+    margin-top:20px;
+    padding:0 80px;
+    color:#ddd;
+    font-size:14px;
+}
+.subtitle span{
+    font-weight: 800;
+    color:#a5e5d9;
+    font-size:14px;
+}
+.btnwrapper{
+    margin:50px 0 80px 0;
+    width:100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.wrapper button{
+    flex:1;
+    border:1px solid #a5e5d9;
+    border-radius: 20px;
+    color:#a5e5d9;
+    padding:10px 0;
+    margin:0 10px;
+    font-size: 21px;
+    cursor: pointer;
+    box-shadow: none;
+    transition: all .2s;
+}
+.wrapper button:hover{
+    font-weight: 900;
+    box-shadow: 0 0 4px #fff, 0 0 8px #fff, 0 0 12px #647971, 0 0 16px #647971, 0 0 20px #647971;
+}
+.button.selected{
+    font-weight: 900;
+    box-shadow: 0 0 4px #fff, 0 0 8px #fff, 0 0 12px #647971, 0 0 16px #647971, 0 0 20px #647971;
+}
+.button.disable{
+    border:1px solid #888;
+    color:#888;
+}
+.button.disable:hover{
+    border:1px solid #888;
+    color:#888;
+    font-weight:normal;
+    box-shadow: none;
+    cursor: default;
+}
+.subtxt{
+    font-weight: 800;
+}
+.sliderwrapper{
+    margin-top:50px;
+    -webkit-animation-name: sappear; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 0.2s; /* Safari 4.0 - 8.0 */
+    animation-name: sappear;
+    animation-duration: 0.2s;
+    animation-timing-function:ease;
+
+}
+@-webkit-keyframes sappear {
+    from {
+        transform:scale(0);
+        opacity:.3;
+    }
+    to {
+        transform:scale(1);
+        opacity:1;
+    }
+  }
+  
+  @keyframes sappear {
+    from {
+        transform:scale(0);
+        opacity:.3;
+    }
+    to {
+        transform:scale(1);
+        opacity:1;
+    }
+  }
+.value{
+    font-size:26px;
+    font-weight: 800;
+    margin-top:80px;
+  }
+  .value span{
+    background-color:rgba(38,201,211,.3);
+ }
+
+  
+  @media screen and (max-width: 700px) {
+    .subtitle{
+        word-break: keep-all;
+        line-height: 150%;
+        margin-top:20px;
+        padding:0 10px;
+        color:#ddd;
+        font-size:14px;
+    }
+    .subtitle span{
+        font-weight: 800;
+        color:#a5e5d9;
+        font-size:16px;
+    }
+  }
